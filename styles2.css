@@ -58,7 +58,7 @@
 .page-wrap {
     max-width: 900px;
     margin: 0 auto;
-    /* background-color: aqua; */
+    /* background-color:aliceblue; */
 }
 
 .section-wrap--wide {
@@ -82,10 +82,9 @@
 }
 
 .headline__text {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.6em;
     text-align: left;
-    margin: 3em 0 1em 0;
     letter-spacing: .1em;
 }
 
@@ -193,6 +192,56 @@
     font-weight: 400;
 }
 
+/* here is home page */
+
+.section-warp {
+    margin:0 auto;
+    padding: 1em 1em;
+}
+
+.purple-text1 {
+    color: #2B1F65;
+}
+
+.purple-text2 {
+    color:#594CF9;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+}
+
+
+.grid a {
+    text-decoration: none;
+}
+
+.case-card__image-warp {
+    width: 100%;
+    overflow: hidden;
+}
+
+.case-card__image-warp img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.case-card__image-warp img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.case-card h3 {
+    margin: 1em 0 .2em 0;
+    font-size: .8em;
+}
+
+.case-card p{
+    font-size: .8em;
+}
+
 @media (min-width: 700px){
     .headline__text {
         font-weight: 600;
@@ -201,4 +250,8 @@
         letter-spacing: .2em;
     }
 
+    .grid {
+        grid-gap: 3em 1em;
+        grid-template-columns: 1fr 1fr;
+    }
 }
