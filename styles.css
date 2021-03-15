@@ -218,26 +218,25 @@ section-normal--dark
 
 /* here is the footer */
 
-.footer-main {
-    background-color: #102535;
-}
 
 .footer-main__title {
     font-weight: 500;
     font-size: 1.5em;
     letter-spacing: .1em;
     color: #AAA2FD;
-    margin: 2em 0 1em 0;
+    margin-bottom: 1.5em;
 }
 
 .footer-main__links {
-    margin-bottom: 4rem;
     display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
 }
 
 .footer-main__links a {
     text-decoration: none;
     color: white;
+    margin-bottom: 1em;
     margin-right: 2em;
     font-size: .9em;
     font-weight: 600;
@@ -245,8 +244,15 @@ section-normal--dark
 
 .caption--dark1 {
     color: #C4C4C4;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 400;
+}
+
+@media (min-width:700px) {
+    .footer-main__links {
+        flex-direction: row;
+        margin-right: 4em;
+    }
 }
 
 /* here is home page */
@@ -778,3 +784,26 @@ section-normal--dark
         font-size: 1.5em;
     }
 }
+
+/* back to top botton */
+
+#top {
+    display: none; 
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2.5em; /* Place the button at the bottom of the page */
+    right: 2.5em; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#594CF9; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 1em; /* Increase font size */
+    width: 60px;
+    height: 60px;
+  }
+  
+  #top:hover {
+    background-color:#3018A6; /* Add a dark-grey background on hover */
+  }
