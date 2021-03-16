@@ -43,6 +43,7 @@ section-normal--dark
     color:black;
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 1em;
 }
 
 .nav-main__title {
@@ -66,17 +67,17 @@ section-normal--dark
 
 .nav-main__links a {
     text-decoration: none;
-    padding: 1em;
+    padding: 1em 2em;
     display: block;
 }
 
-.nav-main__links li:hover {
-    background-color: azure;
+.nav-main__links a:hover {
+    color: #594CF9;
 }
 
 .toggle-button {
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     right: 1.5rem;
     display: none;
     flex-direction: column;
@@ -384,13 +385,13 @@ section-normal--dark
     }
 
     .case-head__title h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: 500;
         letter-spacing: .1em;
     }
 
     .case-head__title p {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -518,7 +519,7 @@ section-normal--dark
         /* font-weight: 400; */
         font-size: 1.2em;
         line-height: 1.6em;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
     }
     
     .sec-subtitle {
@@ -541,16 +542,25 @@ section-normal--dark
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    padding: 1.5em;
+    /* padding: 1.5em; */
     max-width: 1000px;
+}
+
+.section-wrap--dark-wide {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 3em;
 }
 
 .flex-wrap1-box1 {
     width: 100%;
+    padding: 0 1em;
 }
 
 .flex-wrap1-box2 {
     width: 100%;
+    padding: 0 1em;
+    margin-bottom: 1em;
 }
 
 .sec-title-dark {
@@ -584,6 +594,10 @@ section-normal--dark
 
 @media (min-width: 700px) {
     
+    .section-wrap--dark {
+        padding: 4em 0;
+    }
+
     .flex-wrap1-box1 {
         width: 25%;
     }
@@ -603,7 +617,7 @@ section-normal--dark
         /* font-weight: 400; */
         font-size: 1.2em;
         line-height: 1.6em;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
         color: #E8E8E8;
     }
     
@@ -620,18 +634,21 @@ section-normal--dark
     background-color: transparent;
     color: #AAA2FD;
     cursor: pointer;
-    padding: 1em 2em;
+    padding: 2em 2em;
     width: 100%;
     border: none;
-    text-align: left;
+    border-bottom: 1px solid #AAA2FD;
+    text-align: center;
     outline: none;
     font-size: .8em;
     font-weight: 600;
     letter-spacing: .2em;
+    margin-bottom: 1em;
   }
 
 .collapsible:hover {
     background-color: #262626;
+    border-bottom: 3px solid #AAA2FD;
 }
 
 .content {
@@ -644,7 +661,7 @@ section-normal--dark
 @media (min-width: 700px) {
     .collapsible {
         font-size: 1em;
-        text-align: center;
+        text-align: right;
       }
 }
 
@@ -697,8 +714,7 @@ section-normal--dark
 /* highlights */
 
 .highlight__title h2 {
-    font-size: 3em;
-    margin-bottom: 1em;
+    font-size: 2em;
 }
 
 .grid-image {
@@ -723,6 +739,13 @@ section-normal--dark
 .img-warp img {
     width: 100%;
     object-fit: cover;
+}
+
+@media (min-width:700px) {
+    .highlight__title h2 {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
 }
 
 /* reflection */
@@ -791,7 +814,7 @@ section-normal--dark
     display: none; 
     position: fixed; /* Fixed/sticky position */
     bottom: 2.5em; /* Place the button at the bottom of the page */
-    right: 2.5em; /* Place the button 30px from the right */
+    right: 1em; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -802,8 +825,15 @@ section-normal--dark
     font-size: 1em; /* Increase font size */
     width: 60px;
     height: 60px;
-  }
+}
   
-  #top:hover {
+#top:hover {
     background-color:#3018A6; /* Add a dark-grey background on hover */
-  }
+}
+
+@media (min-width:700px) {
+    #top {
+        bottom: 2.5em; /* Place the button at the bottom of the page */
+        right: 2em; /* Place the button 30px from the right */
+    }
+}
