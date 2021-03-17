@@ -592,6 +592,21 @@ section-normal--dark
     text-decoration: none;
 }
 
+.insight-box {
+    margin: 2.5em 0;
+    padding: 0 2em 0 2em;
+    border-left: 1px solid white;
+
+}
+
+.insight-box p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+}
+
 @media (min-width: 700px) {
     
     .section-wrap--dark {
@@ -617,8 +632,7 @@ section-normal--dark
         /* font-weight: 400; */
         font-size: 1.2em;
         line-height: 1.6em;
-        margin-bottom: 1.5em;
-        color: #E8E8E8;
+        margin-bottom: 2em;
     }
     
     .sec-subtitle-dark {
@@ -628,6 +642,18 @@ section-normal--dark
         color: #E8E8E8;
     }
 
+    .insight-box {
+        margin: 3em 0;
+        padding: 0 2em 0 4em;
+        border-left: 1px solid white;
+    }
+
+    .insight-box p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin-bottom: 1.5em;
+        font-weight: 600;
+    }
 }
 
 .collapsible {
